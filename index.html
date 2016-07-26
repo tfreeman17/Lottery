@@ -9,6 +9,7 @@
 </head>
 <body>
 <script type="text/javascript" src="radioButtonNumber.js"></script>
+<script type="text/javascript" src="getAndCompare.js"></script>
 <container id= "Words">
 	<h1>Lottery Game</h1>
 	<h2>Pick 4 distinct numbers between 1-10</h2>
@@ -21,7 +22,7 @@
 
 <container id = "select numbers">
 	<form>
-		<fieldset>
+		<fieldset >
 			<label><input type="radio" name="1" value="1"> 1 </label>
 			<label><input type="radio" name="1" value="2"> 2 </label>
 			<label><input type="radio" name="1" value="3"> 3 </label>
@@ -47,7 +48,7 @@
 			<label><input type="radio" name="2" value="9"> 9 </label>
 			<label><input type="radio" name="2" value="10"> 10 </label>
 
-			<span id="secondNumber">pick a different number from the previous</span>
+			<span id="secondNumber"></span>
 		</fieldset>
 		<fieldset>
 			<label><input type="radio" name="3" value="1"> 1 </label>
@@ -62,7 +63,7 @@
 			<label><input type="radio" name="3" value="10"> 10 </label>
 
 
-			<span id="thirdNumber">pick a different number from the 2 previous</span>
+			<span id="thirdNumber"></span>
 		</fieldset>
 		<fieldset>
 			<label><input type="radio" name="4" value="1"> 1 </label>
@@ -77,15 +78,18 @@
 			<label><input type="radio" name="4" value="10"> 10 </label>
 
 
-			<span id="forthNumber">pick a different number from the 3 previous</span>
+			<span id="forthNumber"></span>
 		</fieldset>
-		<button type="submit">
+		<button id= "button" type="button">
 			Submit
 		</button>
+		<!-- <button id= "Play Again" type="button">
+			Play Again
+		</button -->
 	</form>
 </container>
-<container id= "diplayNumbers"></container>
-<container id = "show Money"></container>
+<container id= "displayNumbers">0, 0, 0, 0</container>
+<container id = "show Money">$10</container>
 
 
 <container id = "winningsRules">
